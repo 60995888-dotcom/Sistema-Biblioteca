@@ -1,11 +1,12 @@
 libros = []
+print("Bienvenid@ a la biblioteca universitaria!!!!!")
 
 def registrar_libro():
     print("\n--- REGISTRAR LIBRO ---")
     titulo = input("Ingrese el titulo: ")
     autor = input("Ingrese el autor: ")
     codigo = input("Ingrese el codigo: ")
-
+    
     libro = {
         "titulo": titulo,
         "autor": autor,
@@ -18,6 +19,7 @@ def registrar_libro():
 
 def mostrar_libros():
     print("\n--- LISTA DE LIBROS ---")
+
 
     if len(libros) == 0:
         print("No hay libros registrados.")
